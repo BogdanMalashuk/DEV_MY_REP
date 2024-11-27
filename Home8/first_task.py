@@ -11,7 +11,7 @@ try:
     user_height = float(input("Enter height (m): "))
     imt = user_weight / (user_height ** 2)
 
-    if imt < 0:
+    if imt <= 0:
         raise ValueError
 
     if imt < 16.5:
