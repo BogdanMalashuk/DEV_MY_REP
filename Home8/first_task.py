@@ -30,5 +30,6 @@ try:
 
     print(f"Body weight index: {imt}\n"
           f"Index category: {user_imt_catg}")
+
 except ValueError:
     print(f"Exception. Enter correct value")
