@@ -20,5 +20,9 @@ rooms = [
 ]
 
 room_areas = list(map(lambda room: room["length"] * room["width"], rooms))
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/main
 flat_area = reduce(lambda x, y: x + y, room_areas)
 print(f"Flat area: {flat_area}")
