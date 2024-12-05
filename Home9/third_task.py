@@ -4,7 +4,6 @@ file_output = "output.txt"
 with open(file_input, 'r') as file:
     lines = file.readlines()
 
-
 for line in lines:
     my_dict = {}
     word_list = line.rstrip().split(' ')
