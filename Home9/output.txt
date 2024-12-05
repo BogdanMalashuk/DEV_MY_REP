@@ -1,0 +1,9 @@
+Word 'apple' repeat 3 times
+Word 'cat' repeat 4 times
+Word 'book' repeat 3 times
+Word 'sun' repeat 4 times
+Word 'car' repeat 4 times
+Word 'tree' repeat 4 times
+Word 'pen' repeat 2 times
+Word 'city' repeat 3 times
+Word 'dog' repeat 3 times
