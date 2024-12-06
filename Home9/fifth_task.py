@@ -4,7 +4,7 @@
 всех учащихся, чья оценка меньше трёх баллов.
 """
 
-text_file = "text.txt"
+text_file = "input.txt"
 
 with open(text_file, 'r') as file:
     lines = file.readlines()
