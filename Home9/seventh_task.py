@@ -21,6 +21,7 @@ with open(file_input, 'r') as i_file, open(file_output, 'w') as o_file:
     for i in range(0, len(lines)):
         locked_str = ''
         key = i + 1
+
         for lit in lines[i]:
             if lit in alphabet_lower:
                 locked_str += alphabet_lower[(alphabet_lower.index(lit) + key) % 26]
