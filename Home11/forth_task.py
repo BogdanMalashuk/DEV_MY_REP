@@ -71,10 +71,10 @@ print(f"area: {sphere.get_square():.2f}")
 print(f"radius: {sphere.get_radius()}")
 print(f"center: {sphere.get_center()}")
 
-print(sphere.set_radius(7))
+sphere.set_radius(7)
 print(f"sphere: {sphere.__dict__}")
 
-print(sphere.set_center(3, 2, 9))
+sphere.set_center(3, 2, 9)
 print(f"sphere: {sphere.__dict__}")
 
 is_inside = sphere.is_point_inside(2, 5, 10)
