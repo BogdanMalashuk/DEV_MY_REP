@@ -15,16 +15,13 @@
 
 
 class SuperStr(str):
-    def __init__(self, string):
-        self.string = string
-
     def is_repeating(self, s):
-        if len(self.string) != 0:
-            return self.string.replace(s, '') == ''
+        if len(self) != 0:
+            return self.replace(s, '') == ''
         return False
 
     def is_palindrome(self):
-        return self.string.lower() == self.string[::-1].lower()
+        return self.lower() == self[::-1].lower()
 
 
 str1 = SuperStr("abaaba")
