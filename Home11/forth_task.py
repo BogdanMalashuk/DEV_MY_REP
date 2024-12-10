@@ -58,7 +58,7 @@ class Sphere:
         self.y = y
         self.z = z
 
-    def is_pointer_inside(self, x, y, z):
+    def is_point_inside(self, x, y, z):
         length = math.sqrt((x - self.x) ** 2 + (y - self.y) ** 2 + (z - self.z) ** 2)
         return length < self.r
 
@@ -77,5 +77,5 @@ print(f"sphere: {sphere.__dict__}")
 print(sphere.set_center(3, 2, 9))
 print(f"sphere: {sphere.__dict__}")
 
-is_inside = sphere.is_pointer_inside(2, 5, 10)
+is_inside = sphere.is_point_inside(2, 5, 10)
 print(f"is point inside sphere: {is_inside}")
