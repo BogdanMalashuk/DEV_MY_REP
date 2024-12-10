@@ -20,6 +20,7 @@ class Math:
     def division(self, a, b):
         if b == 0:
             print("invalid value")
+            return
         print(f"{a} : {b} = {a / b}")
 
 
