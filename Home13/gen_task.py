@@ -20,7 +20,7 @@ def reader(file_path):
 
 def generator(file_path):
     with open(file_path, 'r', encoding='utf-8') as file:
-        for line in reader(file_path):
+        for line in reader(file):
             if 'python' in line.lower():
                 yield line.strip()
 
