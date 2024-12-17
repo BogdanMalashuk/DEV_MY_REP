@@ -1,0 +1,26 @@
+"""
+Реализовать программу для вывода
+последовательности чисел Фибоначчи до определённого
+числа в последовательности. Номер числа, до которого нужно
+выводить, задаётся пользователем с клавиатуры. Для
+реализации последовательности использовать генераторную
+функцию.
+"""
+
+
+def fibonacci(limit):
+    first = 0
+    second = 1
+    now = second
+    yield 0
+    if limit == 1:
+        return
+    while now < limit:
+        yield now
+        now = first + second
+        first = second
+        second = now
+
+
+for num in fibonacci(100):
+    print(num, end=' ')
