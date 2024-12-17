@@ -22,5 +22,15 @@ def fibonacci(limit):
         second = now
 
 
-for num in fibonacci(100):
+while True:
+    try:
+        value = int(input("Input value: "))
+        if value < 1:
+            raise ValueError
+        break
+    except ValueError:
+        print("invalid input, must be positive integer")
+
+
+for num in fibonacci(value):
     print(num, end=' ')
