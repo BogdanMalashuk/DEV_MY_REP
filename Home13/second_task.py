@@ -8,8 +8,9 @@
 
 
 def infinity(count):
-    for i in range(count):
-        yield f"{i % 3 + 1}"
+    for i in range(count - 1):
+        yield f"{i % 3 + 1}-"
+    yield f"{(count - 1) % 3 + 1}"
 
 
 while True:
@@ -22,4 +23,4 @@ while True:
         print("invalid input, must be positive integer")
 
 for item in infinity(value):
-    print(item, end='-')
+    print(item, end='')
