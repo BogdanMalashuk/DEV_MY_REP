@@ -12,7 +12,6 @@ def fibonacci(limit):
     first = 0
     second = 1
     now = second
-    yield 0
     if limit == 1:
         return
     while now < limit:
