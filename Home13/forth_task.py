@@ -35,7 +35,7 @@ class AnimalFactory:
         elif string.lower() == "dog":
             return Dog()
         else:
-            print("invalid animal type")
+            raise ValueError
 
 
 factory = AnimalFactory()
